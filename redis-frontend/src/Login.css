@@ -1,0 +1,107 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Apply background only to login page */
+.login-page {
+  background: url('C:\Users\Admin\Documents\ITD110\LAB1\redis-frontend\public\images\maria cristina.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep login-container styles */
+.login-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+
+/* Login title */
+.login-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.form input{
+  margin-right: 100px;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+  width: auto;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6e8efb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background: #5a7be5;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6e8efb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.forgot-password:hover {
+  color: #5a7be5;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .login-container {
+      width: 90%;
+      padding: 1.5rem;
+  }
+}
